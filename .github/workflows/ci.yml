@@ -3,8 +3,14 @@ name: CI
 on:
   push:
     branches: [main]
+    paths:
+      - runner/go.mod
+      - runner/go.sum
   pull_request:
     branches: [main]
+    paths:
+      - runner/go.mod
+      - runner/go.sum
 
 jobs:
   test:
